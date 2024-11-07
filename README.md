@@ -25,8 +25,8 @@ This project uses Material UI to build a responsive, user-friendly dashboard in 
 
 1. **Clone the Repository**:
    ```bash
-   git clone <https://github.com/Miss-nonso/UI-task.git>
-   cd <admin-dashboard>
+   git clone https://github.com/Miss-nonso/UI-task.git
+   cd admin-dashboard
    ```
 
 2. **Install Dependencies**:
