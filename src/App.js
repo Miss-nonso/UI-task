@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+// App.js
+import React from "react";
+import { CssBaseline, ThemeProvider, createTheme } from "@mui/material";
+import Sidebar from "./components/Sidebar";
+import Header from "./components/Header";
+import Dashboard from "./pages/Dashboard";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+const theme = createTheme({
+  palette: {
+    primary: { main: "#54bfa5" },
+    background: { default: "#f4f4f4" }
+  }
+});
+
+const App = () => (
+  <ThemeProvider theme={theme}>
+    <CssBaseline />
+    <Header />
+    <div style={{ display: "flex" }}>
+      <Sidebar />
+      <main style={{ flexGrow: 1, padding: "20px" }}>
+        <Dashboard />
+      </main>
     </div>
-  );
-}
+  </ThemeProvider>
+);
 
 export default App;
