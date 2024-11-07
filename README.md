@@ -1,4 +1,4 @@
-# Admin Dashboard README
+# Material UI mini Dashboard 
 
 This project uses Material UI to build a responsive, user-friendly dashboard in a React application, designed to display and manage data effectively.
 
